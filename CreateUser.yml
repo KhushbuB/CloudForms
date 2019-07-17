@@ -8,3 +8,8 @@
       password: 'user'
       group: 'EvmGroup-user'
       email: 'h@r.com'
+      manageiq_connection:
+        url: 'https://10.74.253.115/api'
+        username: 'admin'
+        password: 'smartvm'
+        verify_ssl: False
