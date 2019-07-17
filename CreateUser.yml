@@ -12,4 +12,4 @@
         url: 'http://127.0.0.1'
         username: 'admin'
         password: 'smartvm'
-        verify_ssl: False
+        verify_ssl: True
