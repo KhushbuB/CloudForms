@@ -3,13 +3,8 @@
   tasks:
   - name: Add User in MIQ
     manageiq_user:
-      userid: 'hello'
-      name: 'Hello You'
-      password: 'password'
+      userid: 'user'
+      name: 'User One'
+      password: 'user'
       group: 'EvmGroup-user'
       email: 'h@r.com'
-      manageiq_connection:
-        url: 'http://10.74.253.115/api'
-        username: 'admin'
-        password: 'smartvm'
-        verify_ssl: False
