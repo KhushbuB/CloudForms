@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  vars_prompt:
+    - name: Hostname
+      prompt: "Enter VMWare Hostname "
+      private: no
+    - name: Password
+      prompt: "Enter VMWare Host Password "
+      private: yes
+
+  tasks:
+    - debug:
+        msg: 'Creds are {{Hostname, Password}}'
+
+...
