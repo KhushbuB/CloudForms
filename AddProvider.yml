@@ -7,9 +7,9 @@
         type: 'VMware'
         state: 'present'
         provider:
-          hostname: 'vcenter-et.gsslab.pnq2.redhat.com'
-          userid: 'administrator@vsphere.local'
-          password: 'RedHat1!'
+          hostname: '<host>'
+          userid: '<user>'
+          password: '<pass>'
         manageiq_connection:
           url: 'https://10.74.253.115'
           username: 'admin'
