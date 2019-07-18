@@ -1,5 +1,16 @@
 ---
 - hosts: localhost
+  vars_prompt:
+    - name: Hostname
+      prompt: "Enter VMWare Hostname "
+      private: no
+    - name: Username
+      prompt: "Enter VMWare Username "
+      private: no
+    - name: Password
+      prompt: "Enter VMWare Host Password "
+      private: yes
+
   tasks:
     - name: Add Provider
       manageiq_provider:
@@ -7,9 +18,9 @@
         type: 'VMware'
         state: 'present'
         provider:
-          hostname: '<host>'
-          userid: '<user>'
-          password: '<pass>'
+          hostname: '{{ Hostname }}'
+          userid: '{{ Username }}'
+          password: '{{ Password }}'
         manageiq_connection:
           url: 'https://10.74.253.115'
           username: 'admin'
