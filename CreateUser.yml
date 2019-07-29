@@ -9,7 +9,7 @@
       group: 'EvmGroup-user'
       email: 'h@r.com'
       manageiq_connection:
-        url: 'https://10.74.253.115'
+        url: 'https://10.74.130.185'
         username: 'admin'
         password: 'smartvm'
         verify_ssl: False
